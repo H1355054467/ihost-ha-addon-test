@@ -1,0 +1,52 @@
+{
+  "name": "eWeLink-Remote Gateway Dev",
+  "version": "0.2.5",
+  "slug": "ewelink_remote",
+  "description": "eWeLink-Remote Gateway Dev Add-on supports adding eWeLink-Remote sub-devices R5, R5W, S-Mate, S-Mate2 to Home Assistant as trigger conditions for automation",
+  "startup": "application",
+  "boot": "auto",
+  "arch": [
+    "armv7",
+    "aarch64",
+    "amd64"
+  ],
+  "init": false,
+  "panel_icon": "mdi:signal-variant",
+  "panel_title": "eWeLink-Remote Gateway Dev",
+  "ingress": true,
+  "ingress_port": 3031,
+  "ingress_stream": true,
+  "host_network": true,
+  "homeassistant_api": true,
+  "hassio_role": "admin",
+  "hassio_api": true,
+  "map": [
+    {
+      "type": "homeassistant_config",
+      "read_only": false,
+      "path": "/config"
+    },
+    {
+      "type": "addon_config",
+      "read_only": false,
+      "path": "/server_data"
+    }
+  ],
+  "services": [
+    "mqtt:need"
+  ],
+  "options": {
+    "log_level": "Info",
+    "mqtt": {}
+  },
+  "schema": {
+    "log_level": "list(None|Info|Debug)?",
+    "mqtt": {
+      "server": "str?",
+      "username": "str?",
+      "password": "str?"
+    }
+  },
+  "image": "ghcr.io/h1355054467/remote-ihost-test-{arch}",
+  "host_dbus": true
+}
