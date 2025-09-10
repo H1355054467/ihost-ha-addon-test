@@ -47,6 +47,6 @@
       "password": "str?"
     }
   },
-  "image": "ghcr.io/h1355054467/remote-ihost-test-{arch}",
+  "image": "ghcr.io/ihost-open-source-project/hassio-ihost-ewelink-remote-{arch}",
   "host_dbus": true
 }
