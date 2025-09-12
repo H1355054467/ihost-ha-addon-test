@@ -1,8 +1,8 @@
 # Changelog  
 
-## 0.2.5  
+## 0.3.0  
 ### Added  
-- Added Bluetooth proxy support.
+- Supports Bluetooth proxy. You need to install BLE Passthrough integration through HACS to listen to Bluetooth broadcasts.
 
 ## 0.2.4  
 ### Fixed  
