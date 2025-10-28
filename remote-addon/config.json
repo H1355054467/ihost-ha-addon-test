@@ -47,7 +47,7 @@
       "password": "str?"
     }
   },
-  "image": "ghcr.io/ihost-open-source-project/hassio-ihost-addon-{arch}",
+  "image": "ghcr.io/ihost-open-source-project/hassio-ihost-ewelink-remote-{arch}",
   "host_dbus": true,
   "homeassistant": "2025.9.2"
 }
